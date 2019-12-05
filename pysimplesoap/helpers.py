@@ -609,6 +609,7 @@ class Struct(dict):
     __keys = []
     
     def __init__(self, key=None):
+        super(dict, self).__init__()
         self.key = key
         self.__keys = []
         self.array = False
